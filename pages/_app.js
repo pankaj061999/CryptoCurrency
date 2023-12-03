@@ -4,8 +4,8 @@ import { Provider } from "react-redux";
 import { persistStore } from "redux-persist";
 import { PersistGate } from "redux-persist/integration/react";
 import "../styles/globals.css";
-import store from "@/redux/store";
 import theme from "@/styles/theme";
+import store from "@/src/redux/store";
 
 const persistor = persistStore(store, {}, function () {
   persistor.persist();
