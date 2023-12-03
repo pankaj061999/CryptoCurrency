@@ -29,7 +29,7 @@ export const CryProCUrrencyChangesComponent = () => {
               </TableRow>
             </TableHead>
             <TableBody>
-              {cryptoCurrencyValue?.data.length > 0 &&
+              {cryptoCurrencyValue?.data?.length > 0 &&
                 cryptoCurrencyValue?.data?.flat(1).map((item, index) => {
                   return (
                     <TableRow key={item?.id}>
